@@ -21,5 +21,14 @@ class MainActivity : AppCompatActivity() {
             wynik += ile_dostajesz
             score_text.text = wynik.toString()
         }
+        settings_button.setOnClickListener {
+            val s_powrot = findViewById<ImageView>(R.id.powrot_settings)
+
+            setContentView(R.layout.settings_activity)
+
+            s_powrot.setOnClickListener {
+                setContentView(R.layout.main_activity)
+            }
+        }
     }
 }
