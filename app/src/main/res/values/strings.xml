@@ -3,4 +3,6 @@
     <string name="karthus">Zadzwoń do karthusa aby zdobywać o 2 DisPointsy więcej z każdym kliknięciem</string>
     <string name="shyvana_text">Wykonaj \"Genka na Shyvanie\". Uzyskasz + 1 zdobywanych DisPointsów</string>
     <string name="grecja_text">Jebanie Grecji daje ci +3 do prędkości zbierania DisPointsów</string>
+    <string name="shyvana_text2">Wykonaj Genka na Shyvanie.\nZ każdym kliknięciem zdobywasz +1 DisPointsów</string>
+    <string name="karthus_text2">Zadzwoń do karthusa.\nZ każdym kliknięciem zdobywasz +2 DisPointsów</string>
 </resources>

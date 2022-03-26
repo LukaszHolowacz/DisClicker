@@ -8,7 +8,8 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 
-public var wynik = 0.toLong()
+var wynik = 0.toLong()
+var ile_dostajesz = 1
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
