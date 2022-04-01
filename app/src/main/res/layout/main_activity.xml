@@ -37,21 +37,21 @@
 
     <ImageView
         android:id="@+id/smieszneciuszki"
-        android:layout_width="122dp"
-        android:layout_height="81dp"
+        android:layout_width="131dp"
+        android:layout_height="97dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.974"
+        app:layout_constraintVertical_bias="0.88"
         app:srcCompat="@drawable/smieszneciuszki" />
 
     <Button
         android:id="@+id/settings"
         android:layout_width="69dp"
-        android:layout_height="68dp"
-        android:backgroundTint="#000000"
+        android:layout_height="69dp"
+        android:backgroundTint="#00FFFFFF"
         app:icon="@drawable/settings"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

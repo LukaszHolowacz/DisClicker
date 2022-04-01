@@ -37,8 +37,9 @@
 
     <ImageView
         android:id="@+id/powrot_smieszneciuszki"
-        android:layout_width="150px"
-        android:layout_height="150px"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:contentDescription="Powrotdo strony glownej"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.954"
@@ -48,75 +49,150 @@
         app:srcCompat="@drawable/powrot" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/powrot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#90000000"
         android:text="Główna"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.76"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
-
-    <RadioGroup
-        android:layout_width="405dp"
-        android:layout_height="500dp"
+    <Button
+        android:id="@+id/shyvana_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="Wykonaj Genka na Shyvanie"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269" />
+    <TextView
+        android:id="@+id/dostepnosc_shyvana"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:text="@string/niedostepne"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.27" />
+    <TextView
+        android:id="@+id/shyvana_tekst"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:background="@drawable/gradient_text"
+        android:text="@string/shyvana_genk"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
+    <Button
+        android:id="@+id/karthus_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="@string/zadzwo_do_karthusa"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508" />
+    <TextView
+        android:id="@+id/dostepnosc_karthus"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:text="(Niedostępne)"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.507" />
+    <TextView
+        android:id="@+id/karthus_tekst"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:background="@drawable/gradient_text"
+        android:text="@string/karthus_tel"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383" />
 
-        <RadioButton
-            android:id="@+id/shyvana_rbutton"
-            android:layout_width="405dp"
-            android:layout_height="100dp"
-            android:button="?android:attr/listChoiceIndicatorSingle"
-            android:buttonTint="#FFFFFF"
-            android:enabled="false"
-            android:text="@string/shyvana_text2"
-            android:textColor="#80FFFFFF"
-            android:textSize="20sp" />
+    <Button
+        android:id="@+id/grecja_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="Jebać Grecję"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752" />
 
-        <RadioButton
-            android:id="@+id/karthus_rbutton"
-            android:layout_width="405dp"
-            android:layout_height="100dp"
-            android:button="?android:attr/listChoiceIndicatorSingle"
-            android:buttonTint="#FFFFFF"
-            android:text="@string/karthus_text2"
-            android:textColor="#80FFFFFF"
-            android:textSize="20sp" />
+    <TextView
+        android:id="@+id/dostepnosc_grecja"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:text="(Niedostępne)"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751" />
 
-        <RadioButton
-            android:id="@+id/grecja_rbutton"
-            android:layout_width="405dp"
-            android:layout_height="100dp"
-            android:button="?android:attr/listChoiceIndicatorSingle"
-            android:buttonTint="#FFFFFF"
-            android:text="@string/grecja_text"
-            android:textColor="#80FFFFFF"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="405dp"
-            android:layout_height="100dp"
-            android:button="?android:attr/listChoiceIndicatorSingle"
-            android:buttonTint="#FFFFFF"
-            android:text="RadioButton"
-            android:textColor="#80FFFFFF" />
-
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="405dp"
-            android:layout_height="100dp"
-            android:button="?android:attr/listChoiceIndicatorSingle"
-            android:buttonTint="#FFFFFF"
-            android:text=""
-            android:textColor="#80FFFFFF" />
-    </RadioGroup>
-
+    <TextView
+        android:id="@+id/grecja_tekst"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:background="@drawable/gradient_text"
+        android:text="@string/karthus_tel"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.644" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
