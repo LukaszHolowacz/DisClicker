@@ -50,7 +50,7 @@
         android:id="@+id/reset_points"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="@string/usun_dispoints"
+        android:text="Usuń wszystkie DisPointsy"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

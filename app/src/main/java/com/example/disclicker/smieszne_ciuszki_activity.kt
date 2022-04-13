@@ -4,10 +4,7 @@ import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.RadioButton
-import android.widget.TextView
+import android.widget.*
 
 class smieszne_ciuszki_activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,21 +26,26 @@ class smieszne_ciuszki_activity : AppCompatActivity() {
         score.text = wynik.toString()
 
         powrot.setOnClickListener {
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-        if(wynik>10){
+        if(wynik>=10){
             shyvana.isEnabled = true
             if(shyvana.isEnabled == true){
                 shyvana_dostepnosc_text.text = getString(R.string.dostepne)
                 shyvana.setTextColor(Color.parseColor("#FFFFFF"))
             }
         }
-        if(wynik>20){
+        if(wynik>=20){
             karthus.isEnabled = true
             if(karthus.isEnabled == true){
                 karthus_dostepnosc_text.text = getString(R.string.dostepne)
                 karthus.setTextColor(Color.parseColor("#FFFFFF"))
+            }
+        }
+        shyvana.setOnClickListener {
+            if(wynik<10){
+                Toast.makeText(applicationContext,"Musisz posiadać 1000 DisPointsów",Toast.LENGTH_SHORT).show()
             }
         }
     }
