@@ -28,6 +28,8 @@ class smieszne_ciuszki_activity : AppCompatActivity() {
         powrot.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_out_bottom, R.anim.slide_in_bottom)
+
         }
         if(wynik>=10){
             shyvana.isEnabled = true

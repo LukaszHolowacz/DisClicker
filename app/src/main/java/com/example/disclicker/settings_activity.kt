@@ -15,6 +15,7 @@ class settings_activity : AppCompatActivity() {
         powrot.setOnClickListener {
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_to_right, R.anim.slide_to_left)
         }
     }
 }

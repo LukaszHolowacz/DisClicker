@@ -42,10 +42,12 @@ class MainActivity : AppCompatActivity() {
         settings_button.setOnClickListener {
             val intent = Intent(this,settings_activity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_to_right, R.anim.slide_to_left)
         }
         smieszne_ciuszki_button.setOnClickListener {
             val intent = Intent(this,smieszne_ciuszki_activity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_out_bottom, R.anim.slide_in_bottom)
         }
     }
 }
