@@ -2,9 +2,13 @@ package com.example.disclicker
 
 import android.content.Intent
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.*
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.example.disclicker.MainActivity.Companion.wynik
 
 class smieszne_ciuszki_activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,13 +21,19 @@ class smieszne_ciuszki_activity : AppCompatActivity() {
 
         val shyvana_dostepnosc_text = findViewById<TextView>(R.id.dostepnosc_shyvana)
         val karthus_dostepnosc_text = findViewById<TextView>(R.id.dostepnosc_karthus)
-
         val score = findViewById<TextView>(R.id.score_text2)
 
         shyvana.isEnabled = false
         karthus.isEnabled = false
 
         score.text = wynik.toString()
+
+        /*val score_text = findViewById<TextView>(R.id.score_text).text.toString()
+        score.text = score_text*/
+        /*val wynik_pobrane = intent.getStringExtra("wynik_przekazane")*/
+
+
+        /*score.text = findViewById<TextView>(R.id.score_text).toString()*/
 
         powrot.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)

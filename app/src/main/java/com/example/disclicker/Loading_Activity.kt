@@ -1,10 +1,10 @@
 package com.example.disclicker
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 
 class Loading_Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,12 +16,18 @@ class Loading_Activity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
 
-        // we used the postDelayed(Runnable, time) method
-        // to send a message with a delayed time.
         Handler().postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
+            if (Appconfig.activity == false) {
+                val intent = Intent()
+                intent.setClass(this, TworzenieUzytkownika::class.java)
+                startActivity(intent)
+                this.finish()
+            }
+            if (Appconfig.activity == true) {
+                val intent = Intent()
+                intent.setClass(this, MainActivity::class.java)
+                startActivity(intent)
+            }
         }, 6000)
     }
 }

@@ -9,11 +9,13 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 
-var wynik = 0.toLong()
-var ile_dostajesz = 1
-
 class MainActivity : AppCompatActivity() {
+    companion object {
+        var wynik = 0.toLong()
+        var ile_dostajesz = 1
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
         val przycisk_podstawowy = findViewById<ImageButton>(R.id.jdbutton)
@@ -25,8 +27,6 @@ class MainActivity : AppCompatActivity() {
         val scaledown = AnimationUtils.loadAnimation(this,R.anim.scale_down)
         val rotate = AnimationUtils.loadAnimation(this,R.anim.rotate)
         val fade = AnimationUtils.loadAnimation(this,R.anim.fade)
-
-        var ile_dostajesz = 1
 
         przycisk_podstawowy.setOnClickListener {
             wynik += ile_dostajesz
@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         }
         smieszne_ciuszki_button.setOnClickListener {
             val intent = Intent(this,smieszne_ciuszki_activity::class.java)
+            intent.putExtra("wynik_przekazane", wynik)
             startActivity(intent)
             overridePendingTransition(R.anim.slide_out_bottom, R.anim.slide_in_bottom)
         }

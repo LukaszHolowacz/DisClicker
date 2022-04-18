@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.disclicker">
-
     <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="23" />
@@ -23,13 +22,15 @@
         </activity>
         <activity
             android:name=".smieszne_ciuszki_activity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".settings_activity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+        <activity
+            android:name=".TworzenieUzytkownika"
+            android:exported="true"/>
     </application>
-
 </manifest>
