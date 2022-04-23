@@ -107,7 +107,7 @@ class smieszne_ciuszki_activity : AppCompatActivity() {
                 grecja_dostepnosc_text.text = getString(R.string.uzywane)
             }
         }
-        if(wynik>=1000){
+        if(wynik>=10000){
             grecja.isEnabled = true
             if(grecja.isEnabled == true){
                 grecja_dostepnosc_text.text = getString(R.string.dostepne)
