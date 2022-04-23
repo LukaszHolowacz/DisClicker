@@ -17,17 +17,10 @@ class Loading_Activity : AppCompatActivity() {
         )
 
         Handler().postDelayed({
-            if (Appconfig.activity == false) {
-                val intent = Intent()
-                intent.setClass(this, TworzenieUzytkownika::class.java)
-                startActivity(intent)
-                this.finish()
-            }
-            if (Appconfig.activity == true) {
-                val intent = Intent()
-                intent.setClass(this, MainActivity::class.java)
-                startActivity(intent)
-            }
+            val intent = Intent()
+            intent.setClass(this, MainActivity::class.java)
+            startActivity(intent)
+            this.finish()
         }, 6000)
     }
 }
